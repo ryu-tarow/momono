@@ -9,7 +9,11 @@ export default function Header() {
   return (
     <header className="fixed w-screen px-2 py-2 bg-pink-300">
       <div className="h-12 flex justify-between max-w-screen-lg m-auto">
-        <Link href="/"><div className="pt-3 pl-1 text-white cursor-pointer">MOMONO</div></Link>
+        <Link href="/">
+          <div className="pt-3 pl-1 text-white cursor-pointer">
+            MOMONO（仮）
+          </div>
+        </Link>
         <button onClick={onClickShowNav}>
           {showNav ? (
             <div className="border-white w-12 h-12 border rounded-full text-4xl text-white sm:hidden">
@@ -33,7 +37,7 @@ export default function Header() {
                 写真集
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/contact">
               <li className="mx-5 hover:text-pink-200 cursor-pointer">
                 お問い合わせ
               </li>
@@ -54,7 +58,7 @@ export default function Header() {
                 写真集
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/contact">
               <li className="px-5 py-2 hover:bg-pink-500">お問い合わせ</li>
             </Link>
           </ul>

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "components/Layout";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,18 +10,14 @@ export default function Home() {
         <link rel="icon" href="" />
       </Head>
       <div className="m-auto max-w-screen-lg">
-        <div className="grid grid-cols-2">
-        <img
-          src="top-img.jpg"
-          className="w-screen"
-          alt="top-image"
-        />
-                <img
-          src="top-img2.jpg"
-          className="w-screen"
-          alt="top-image"
+        <div className="">
+          <img
+            src="top.png"
+            className="w-screen object-cover h-56 sm:h-72 md:h-96"
+            alt="top-image"
           />
-          </div>
+        </div>
+        <p>とりあえず適当な画像入れてる↑</p>
         <ul className="flex justify-center w-screen max-w-screen-lg">
           <div className="hover:bg-blue-300 bg-blue-400 w-1/3 py-2 m-1 rounded-md text-center text-white">
             <a href="https://twitter.com/msrmmn">
@@ -40,6 +37,31 @@ export default function Home() {
             </a>
           </div>
         </ul>
+        <div className="sm:grid sm:grid-cols-2">
+          <div>
+            <div className="text-center bg-gray-400 rounded-lg p-1 mb-1 mx-1 text-white">
+              <h3>▼　今月の予定</h3>
+            </div>
+            <a href="https://note.com/msrmmn">
+              <img
+                src="note.png"
+                className="w-screen object-cover h-32 sm:h-72 px-1 rounded-lg mb-1"
+              />
+            </a>
+          </div>
+          <div>
+            <div className="text-center bg-purple-400 rounded-lg p-1 mb-1 mx-1 text-white">
+              <h3>▼　コスプレ集</h3>
+            </div>
+            <Link href="/photos">
+              <img
+                src="photos/nino.png"
+                className="w-screen object-cover h-52 sm:h-72 px-1 rounded-lg mb-1"
+              />
+            </Link>
+          </div>
+        </div>
+        <p>リンクの追加とか、配置・色・基本的になんでも自由な構成にできるよ</p>
       </div>
     </Layout>
   );
