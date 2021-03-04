@@ -9,30 +9,30 @@ export default function Photos() {
           写真集
         </h1>
       </div>
-      <div className="grid grid-cols-2 w-11/12 m-auto">
+      <div className="grid grid-cols-2 w-11/12 m-auto max-w-screen-lg">
         <div>
-        <div className="text-center border border-purple-400 rounded-lg text-purple-500 p-1 mx-1">
-          <h3>▼ アニメ</h3>
-        </div>
-        <Link href="/photos/anime">
-          <img
-            src="photos/nino.png"
-            className="w-screen object-cover h-48 sm:h-72 rounded-lg cursor-pointer duration-300 hover:opacity-70 p-1"
-          />
-          </Link>
+          <div className="text-center border border-purple-400 rounded-lg text-purple-500 p-1 mx-1">
+            <h3>▼ アニメ</h3>
           </div>
+          <Link href="/photos/anime">
+            <img
+              src="photos/nino.png"
+              className="w-screen object-cover h-48 sm:h-72 rounded-lg cursor-pointer duration-300 hover:opacity-70 p-1"
+            />
+          </Link>
+        </div>
         <div>
-        <div className="text-center border border-yellow-500 rounded-lg text-yellow-600 p-1 mx-1">
-          <h3>▼ ユニーク</h3>
+          <div className="text-center border border-yellow-500 rounded-lg text-yellow-600 p-1 mx-1">
+            <h3>▼ ユニーク</h3>
+          </div>
+          <Link href="/photos">
+            <img
+              src="photos/fox.png"
+              className="w-screen object-cover h-48 sm:h-72 rounded-lg cursor-pointer duration-300 hover:opacity-70 p-1"
+            />
+          </Link>
         </div>
-        <Link href="/photos">
-          <img
-            src="photos/fox.png"
-            className="w-screen object-cover h-48 sm:h-72 rounded-lg cursor-pointer duration-300 hover:opacity-70 p-1"
-          />
-        </Link>
-        </div>
-        </div>
+      </div>
     </Layout>
   );
 }

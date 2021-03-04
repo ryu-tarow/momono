@@ -2,7 +2,13 @@ import Head from "next/head";
 import Layout from "components/Layout";
 import Link from "next/link";
 
+import {Share} from 'components/Share';
+
 export default function Home() {
+  const ogUrl = "";
+  const ogImage = "nino.png";
+  const ogTitle = "momono";
+  const ogDescription = "桃乃だよ。";
   return (
     <Layout>
       <Head>
@@ -10,15 +16,15 @@ export default function Home() {
         <link rel="icon" href="" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="" />
-        <meta property="og:image" content="" />
-        <meta property="og:title" content="MOMONO" />
+        <meta property="og:url" content={ogUrl} />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:title" content={ogTitle} />
         <meta
           property="og:description"
-          content="真白桃乃のwebサイトだよ！ーーー"
+          content={ogDescription}
         />
         <meta property="og:locale" content="ja_JP" />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@msrmmn" />
       </Head>
       <div className="m-auto max-w-screen-lg">
@@ -72,6 +78,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Share url={"https://msrmmn2.vercel.app"} text={"テスト"}/>
     </Layout>
   );
 }

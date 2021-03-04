@@ -8,6 +8,7 @@ export default function Contact() {
           お問い合わせ
         </h1>
       </div>
+      <div></div>
     </Layout>
   );
 }
