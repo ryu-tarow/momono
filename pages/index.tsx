@@ -8,6 +8,18 @@ export default function Home() {
       <Head>
         <title>MOMONO</title>
         <link rel="icon" href="" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:title" content="MOMONO" />
+        <meta
+          property="og:description"
+          content="真白桃乃のwebサイトだよ！ーーー"
+        />
+        <meta property="og:locale" content="ja_JP" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@msrmmn" />
       </Head>
       <div className="m-auto max-w-screen-lg">
         <div className="">
@@ -17,51 +29,48 @@ export default function Home() {
             alt="top-image"
           />
         </div>
-        <p>とりあえず適当な画像入れてる↑</p>
-        <ul className="flex justify-center w-screen max-w-screen-lg">
-          <div className="hover:bg-blue-300 bg-blue-400 w-1/3 py-2 m-1 rounded-md text-center text-white">
+        <ul className="flex justify-center w-11/12 m-auto max-w-screen-lg">
+          <div className="duration-300 hover:opacity-70 bg-blue-400 w-1/3 py-2 m-1 rounded-md text-center text-white">
             <a href="https://twitter.com/msrmmn">
               <img src="twitter.png" className="m-auto w-8" />
             </a>
           </div>
-
-          <div className="hover:bg-pink-300 bg-pink-400 w-1/3 py-2 my-1 rounded-md text-center text-white">
+          <div className="duration-300 hover:opacity-70 bg-pink-400 w-1/3 py-2 my-1 rounded-md text-center text-white">
             <a href="https://www.instagram.com/msrmmn/?hl=ja">
               <img src="instaglam.png" className="m-auto w-8" />
             </a>
           </div>
 
-          <div className="hover:bg-gray-600 bg-gray-800 w-1/3 py-2 m-1 text-center rounded-md text-white">
+          <div className="duration-300 hover:opacity-70 bg-gray-800 w-1/3 py-2 m-1 text-center rounded-md text-white">
             <a href="https://www.tiktok.com/@msrmmn?lang=ja">
               <img src="tiktok.png" className="m-auto w-6 pt-0.5" />
             </a>
           </div>
         </ul>
-        <div className="sm:grid sm:grid-cols-2">
+        <div className="sm:grid sm:grid-cols-2 w-11/12 m-auto">
           <div>
-            <div className="text-center bg-gray-400 rounded-lg p-1 mb-1 mx-1 text-white">
-              <h3>▼　今月の予定</h3>
+            <div className="text-center border border-gray-400 rounded-lg text-gray-500 p-1 mx-1">
+              <h3>▼ 今月の予定</h3>
             </div>
             <a href="https://note.com/msrmmn">
               <img
                 src="note.png"
-                className="w-screen object-cover h-32 sm:h-72 px-1 rounded-lg mb-1"
+                className="w-screen object-cover h-32 sm:h-72 rounded-lg duration-300 hover:opacity-70 p-1"
               />
             </a>
           </div>
           <div>
-            <div className="text-center bg-purple-400 rounded-lg p-1 mb-1 mx-1 text-white">
-              <h3>▼　コスプレ集</h3>
+            <div className="text-center border border-purple-400 rounded-lg text-purple-500 p-1 mx-1">
+              <h3>▼ コスプレ集</h3>
             </div>
             <Link href="/photos">
               <img
                 src="photos/nino.png"
-                className="w-screen object-cover h-52 sm:h-72 px-1 rounded-lg mb-1"
+                className="w-screen object-cover h-52 sm:h-72 rounded-lg cursor-pointer duration-300 hover:opacity-70 p-1"
               />
             </Link>
           </div>
         </div>
-        <p>リンクの追加とか、配置・色・基本的になんでも自由な構成にできるよ</p>
       </div>
     </Layout>
   );
