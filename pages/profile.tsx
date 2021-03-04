@@ -1,12 +1,11 @@
 import Layout from "components/Layout";
+import { TitleH1, TextCategory } from "components/UIkit/index";
 
 export default function Profile() {
   return (
     <Layout>
       <div className="max-w-screen-lg m-auto">
-        <h1 className="text-center border border-pink-500 rounded-lg m-1 p-2 text-pink-500">
-          プロフィール
-        </h1>
+        <TitleH1 text={"プロフィール"} />
         <div className="grid grid-cols-1 sm:grid-cols-2">
           <div className="m-auto">
             <img
@@ -16,18 +15,15 @@ export default function Profile() {
             />
           </div>
           <ul className="pt-4 p-2 text-center">
-            <li className="text-xs text-gray-400">name</li>
-            <p className="p-2">真白桃乃</p>
-            <li className="text-xs text-gray-400">date of birth</li>
-            <p className="p-2">1995年10月6日</p>
-            <li className="text-xs text-gray-400">from</li>
-            <p className="p-2">福岡県</p>
-            <li className="text-xs text-gray-400">blood type</li>
-            <p className="p-2">AB型</p>
-            <li className="text-xs text-gray-400">height</li>
-            <p className="p-2">156cm</p>
-            <li className="text-xs text-gray-400">office</li>
-            <p className="p-2">九州でちゃう！女子編集部</p>
+            <TextCategory category={"name"} text={"真白桃乃"} />
+            <TextCategory category={"date of birth"} text={"1995年10月6日"} />
+            <TextCategory category={"from"} text={"福岡県"} />
+            <TextCategory category={"blood type"} text={"AB型"} />
+            <TextCategory category={"height"} text={"156cm"} />
+            <TextCategory
+              category={"office"}
+              text={"九州でちゃう！女子編集部"}
+            />
           </ul>
         </div>
         <ul className="text-center p-1">
@@ -35,11 +31,11 @@ export default function Profile() {
             経歴
           </h3>
           <li className="pt-5">
-            <div className="">九州出ちゃう！研究生</div>
+            <h4 className="">九州出ちゃう！研究生</h4>
             <p className="text-gray-500 text-sm">2019年5月27日〜10月1日</p>
           </li>
           <li className="py-3">
-            <div className="">九州でちゃう！編集部員</div>
+            <h4 className="">九州でちゃう！編集部員</h4>
             <p className="text-gray-500 text-sm">2019年10月2日〜現在</p>
           </li>
         </ul>

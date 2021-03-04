@@ -1,14 +1,12 @@
 import Layout from "components/Layout";
+import { TitleH1 } from "components/UIkit/index";
 
 export default function Contact() {
   return (
     <Layout>
       <div className="max-w-screen-lg m-auto">
-        <h1 className="text-center border border-pink-500 rounded-lg m-1 p-2 text-pink-500">
-          お問い合わせ
-        </h1>
+        <TitleH1 text={"お問い合わせ"} />
       </div>
-      <div></div>
     </Layout>
   );
 }

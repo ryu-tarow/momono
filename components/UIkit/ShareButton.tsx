@@ -12,7 +12,7 @@ interface Props {
   url: string;
 }
 
-export const Share = ({ text, url }: Props) => {
+export const ShareButton = ({ text, url }: Props) => {
   return (
     <ul className="flex justify-center">
       <li className="m-2">
