@@ -2,7 +2,7 @@ import Head from "next/head";
 import Layout from "components/Layout";
 import Link from "next/link";
 
-import {Share} from 'components/Share';
+import { Share } from "components/Share";
 
 export default function Home() {
   const ogUrl = "";
@@ -19,10 +19,7 @@ export default function Home() {
         <meta property="og:url" content={ogUrl} />
         <meta property="og:image" content={ogImage} />
         <meta property="og:title" content={ogTitle} />
-        <meta
-          property="og:description"
-          content={ogDescription}
-        />
+        <meta property="og:description" content={ogDescription} />
         <meta property="og:locale" content="ja_JP" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@msrmmn" />
@@ -78,7 +75,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Share url={"https://msrmmn2.vercel.app"} text={"テスト"}/>
+      <Share url={"https://msrmmn2.vercel.app"} text={"テスト"} />
     </Layout>
   );
 }
