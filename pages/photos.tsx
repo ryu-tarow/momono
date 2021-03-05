@@ -10,7 +10,7 @@ export default function Photos() {
             text={"▼ アニメ"}
             color={"border-purple-400 text-purple-500"}
             url={"/photos/anime"}
-            img={"photos/nino.png"}
+            img={"photos/nino_com.png"}
           />
           <PhotoCard
             text={"▼ ユニーク"}
