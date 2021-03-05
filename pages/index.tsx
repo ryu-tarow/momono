@@ -4,7 +4,7 @@ import { PhotoCard, SNSLink, ShareButton } from "components/UIkit/index";
 export default function Home() {
   //TOPページの基本データ
   const url = "https://msrmmn2.vercel.app";
-  const image = "photos/nino.png";
+  const image = "photos/nino_com.png";
   const title = "MOMONO";
   const description = "TOPページの説明";
 
@@ -16,12 +16,14 @@ export default function Home() {
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
-        <meta property="og:image" content={image} />
+        <meta property="og:image" content={`${url}/${image}`} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:locale" content="ja_JP" />
+
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@msrmmn" />
+        <meta property="twitter:image" content={`${url}/${image}`} />
       </Head>
       <div className="m-auto max-w-screen-lg">
         <div className="">
