@@ -6,7 +6,7 @@ export default function Home() {
   const url = "https://msrmmn2.vercel.app";
   const image = "photos/nino.png";
   const title = "MOMONO";
-  const description = "description";
+  const description = "TOPページの説明";
 
   return (
     <>
