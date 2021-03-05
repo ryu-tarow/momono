@@ -26,7 +26,7 @@ export default function Home() {
       <div className="m-auto max-w-screen-lg">
         <div className="">
           <img
-            src="top.png"
+            src="top.jpeg"
             className="w-screen object-cover h-56 sm:h-72 md:h-96"
             alt="top-image"
           />
@@ -38,7 +38,7 @@ export default function Home() {
             color={"bg-blue-400 mx-1"}
           />
           <SNSLink
-            img={"instaglam.png"}
+            img={"instaglam.jpeg"}
             link={"https://www.instagram.com/msrmmn/?hl=ja"}
             color={"bg-pink-400 mx-0"}
           />
@@ -55,7 +55,7 @@ export default function Home() {
             </h3>
             <a href="https://note.com/msrmmn">
               <img
-                src="note.png"
+                src="note.jpeg"
                 className="w-screen object-cover h-32 sm:h-72 rounded-lg duration-300 hover:opacity-70 p-1"
               />
             </a>
