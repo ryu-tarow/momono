@@ -47,6 +47,7 @@ export default function Home() {
             link={"https://www.tiktok.com/@msrmmn?lang=ja"}
             color={"bg-gray-800 mx-1"}
           />
+          
         </ul>
         <div className="grid sm:grid-cols-2 w-11/12 m-auto">
           <div>

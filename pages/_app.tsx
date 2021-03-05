@@ -10,8 +10,6 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
       <Layout>
         <Component {...pageProps} />
       </Layout>
-      <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
     </>
   );
 }

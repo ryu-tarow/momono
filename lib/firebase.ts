@@ -1,7 +1,5 @@
 import firebase from "firebase/app";
 import "firebase/analytics";
-import "firebase/auth";
-import "firebase/firestore";
 
 if (typeof window !== "undefined" && firebase.app.length === 0) {
   const firebaseConfig = {
