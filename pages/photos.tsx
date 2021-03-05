@@ -1,9 +1,8 @@
-import Layout from "components/Layout";
 import { PhotoCard, TitleH1 } from "components/UIkit/index";
 
 export default function Photos() {
   return (
-    <Layout>
+    <>
       <div className="max-w-screen-lg m-auto">
         <TitleH1 text={"写真集"} />
         <div className="grid grid-cols-2 w-11/12 m-auto">
@@ -21,6 +20,6 @@ export default function Photos() {
           />
         </div>
       </div>
-    </Layout>
+    </>
   );
 }

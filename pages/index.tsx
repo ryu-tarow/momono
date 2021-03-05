@@ -1,9 +1,7 @@
 import Head from "next/head";
-import Layout from "components/Layout";
 import { PhotoCard, SNSLink, ShareButton } from "components/UIkit/index";
 
 export default function Home() {
-  
   //TOPページの基本データ
   const url = "https://msrmmn2.vercel.app";
   const image = "photos/nino.png";
@@ -11,7 +9,7 @@ export default function Home() {
   const description = "description";
 
   return (
-    <Layout>
+    <>
       <Head>
         <title>{title}</title>
         <link rel="icon" href="" />
@@ -71,6 +69,6 @@ export default function Home() {
         </div>
       </div>
       <ShareButton url={url} text={description} />
-    </Layout>
+    </>
   );
 }

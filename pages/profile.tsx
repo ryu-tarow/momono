@@ -1,9 +1,8 @@
-import Layout from "components/Layout";
 import { TitleH1, TextCategory } from "components/UIkit/index";
 
 export default function Profile() {
   return (
-    <Layout>
+    <>
       <div className="max-w-screen-lg m-auto">
         <TitleH1 text={"プロフィール"} />
         <div className="grid grid-cols-1 sm:grid-cols-2">
@@ -40,6 +39,6 @@ export default function Profile() {
           </li>
         </ul>
       </div>
-    </Layout>
+    </>
   );
 }
