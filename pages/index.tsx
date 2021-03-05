@@ -55,7 +55,7 @@ export default function Home() {
             </h3>
             <a href="https://note.com/msrmmn">
               <img
-                src="note.png"
+                src="note_com.png"
                 className="w-screen object-cover h-32 sm:h-72 rounded-lg duration-300 hover:opacity-70 p-1"
               />
             </a>
@@ -64,7 +64,7 @@ export default function Home() {
             text={"▼ コスプレ集"}
             color={"border-purple-400 text-purple-500"}
             url={"/photos"}
-            img={"photos/nino.png"}
+            img={"photos/nino_com.png"}
           />
         </div>
       </div>
