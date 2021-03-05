@@ -8,7 +8,7 @@ export default function Profile() {
         <div className="grid grid-cols-1 sm:grid-cols-2">
           <div className="m-auto">
             <img
-              src="momono.png"
+              src="momono.jpg"
               alt="profile_img"
               className="w-11/12 m-auto px-1 rounded-lg"
             />
