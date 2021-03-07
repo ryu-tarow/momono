@@ -7,7 +7,7 @@ export default function Header() {
     setShowNav(!showNav);
   };
   return (
-    <header className="fixed w-screen px-2 py-2 bg-pink-300">
+    <header className="fixed w-screen px-2 py-2 bg-pink-300 z-10">
       <div className="h-12 flex justify-between max-w-screen-lg m-auto">
         <Link href="/">
           <div className="pt-3 pl-3 text-white cursor-pointer">

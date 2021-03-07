@@ -43,17 +43,17 @@ export default function Home() {
         </div>
         <ul className="flex justify-center w-11/12 m-auto">
           <SNSLink
-            img={"twitter_com.png"}
+            img={"twitter.png"}
             link={"https://twitter.com/msrmmn"}
             color={"bg-blue-400 mx-1"}
           />
           <SNSLink
-            img={"instaglam_com.png"}
+            img={"instaglam.png"}
             link={"https://www.instagram.com/msrmmn/?hl=ja"}
             color={"bg-pink-400 mx-0"}
           />
           <SNSLink
-            img={"tiktok_com.png"}
+            img={"tiktok.png"}
             link={"https://www.tiktok.com/@msrmmn?lang=ja"}
             color={"bg-gray-800 mx-1"}
           />

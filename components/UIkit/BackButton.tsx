@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-interface LinkProps {
+interface BackButtonProps {
   link: string;
 }
 
-export const BackButton = ({ link }: LinkProps) => {
+export const BackButton = ({ link }: BackButtonProps) => {
   return (
     <div className="mt-3 ml-2">
       <div className="w-20 p-2 rounded-full cursor-pointer sm:hidden">
