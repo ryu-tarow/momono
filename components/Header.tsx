@@ -3,18 +3,20 @@ import Link from "next/link";
 
 export default function Header() {
   const [showNav, setShowNav] = useState<boolean>(false);
+  const [showPhotoCategory, setShowPhotoCategory] = useState<boolean>(false);
+  
   const onClickShowNav = () => {
     setShowNav(!showNav);
   };
-  const [showPhotoCategory, setShowPhotoCategory] = useState<boolean>(false);
   const onClickShowPhotoCategory = () => {
     setShowPhotoCategory(!showPhotoCategory);
   };
+
   return (
     <header className="fixed w-screen py-2 bg-pink-300 z-10">
-      <div className="h-12 flex justify-between max-w-screen-lg m-auto pb-2">
+      <div className="h-12 flex justify-between max-w-screen-lg m-auto">
         <Link href="/">
-          <div  onClick={onClickShowNav} className="pt-3 pl-5 text-white cursor-pointer">
+          <div className="pt-3 pl-5 text-white cursor-pointer">
             MOMONO（仮）
           </div>
         </Link>
