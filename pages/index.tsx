@@ -36,24 +36,24 @@ export default function Home() {
       <div className="m-auto max-w-screen-lg">
         <div className="">
           <img
-            src="top_com.png"
+            src="top_image.png"
             className="w-screen object-cover h-56 sm:h-72 md:h-96"
             alt="top-image"
           />
         </div>
         <ul className="flex justify-center w-11/12 m-auto">
           <SNSLink
-            img={"twitter.png"}
+            img={"snsIcons/twitter.png"}
             link={"https://twitter.com/msrmmn"}
             color={"bg-blue-400 mx-1"}
           />
           <SNSLink
-            img={"instaglam.png"}
+            img={"snsIcons/instaglam.png"}
             link={"https://www.instagram.com/msrmmn/?hl=ja"}
             color={"bg-pink-400 mx-0"}
           />
           <SNSLink
-            img={"tiktok.png"}
+            img={"snsIcons/tiktok.png"}
             link={"https://www.tiktok.com/@msrmmn?lang=ja"}
             color={"bg-gray-800 mx-1"}
           />
@@ -66,7 +66,7 @@ export default function Home() {
             <a href="https://note.com/msrmmn">
               <div className="">
                 <img
-                  src="note_com.png"
+                  src="snsIcons/note.png"
                   alt="schedule"
                   className="rounded-t-none rounded-2xl duration-300 hover:opacity-70 px-1 mb-2"
                 />

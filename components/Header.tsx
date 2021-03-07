@@ -6,15 +6,19 @@ export default function Header() {
   const onClickShowNav = () => {
     setShowNav(!showNav);
   };
+  const [showPhotoCategory, setShowPhotoCategory] = useState<boolean>(false);
+  const onClickShowPhotoCategory = () => {
+    setShowPhotoCategory(!showPhotoCategory);
+  };
   return (
-    <header className="fixed w-screen px-2 py-2 bg-pink-300 z-10">
-      <div className="h-12 flex justify-between max-w-screen-lg m-auto">
+    <header className="fixed w-screen py-2 bg-pink-300 z-10">
+      <div className="h-12 flex justify-between max-w-screen-lg m-auto pb-2">
         <Link href="/">
-          <div className="pt-3 pl-3 text-white cursor-pointer">
+          <div  onClick={onClickShowNav} className="pt-3 pl-5 text-white cursor-pointer">
             MOMONO（仮）
           </div>
         </Link>
-        <button onClick={onClickShowNav}>
+        <button onClick={onClickShowNav} className="mr-2">
           {showNav ? (
             <div className="border-white w-12 h-12 border rounded-full text-4xl text-white sm:hidden hover:bg-pink-400 duration-300 hover:opacity-70">
               ×
@@ -55,30 +59,36 @@ export default function Header() {
             <Link href="/profile">
               <li
                 onClick={onClickShowNav}
-                className="px-5 border-b py-2 border-white hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
+                className="px-5 py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
               >
                 プロフィール
               </li>
             </Link>
-            <Link href="/photos">
               <li
-                onClick={onClickShowNav}
-                className="px-5 py-2 border-b border-white hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
+                onClick={onClickShowPhotoCategory}
+                className="px-5 py-2 border-t border-white hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
               >
-                写真集
+              写真集
               </li>
-            </Link>
+            {showPhotoCategory && (
+              <ul className="text-sm">
+                {/* <Link href="/photos"><li onClick={onClickShowNav} className="border-b border-pink-200 py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer">カテゴリ一覧</li></Link> */}
+                <Link href="/photos/standard"><li onClick={onClickShowNav} className="py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer">スタンダード</li></Link>
+                <Link href="/photos/anime"><li onClick={onClickShowNav} className="py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer">アニメ</li></Link>
+                <Link href="/photos/unique"><li onClick={onClickShowNav} className="py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer">ユニーク</li></Link>
+              </ul>
+            )}
             <Link href="/contact">
               <li
                 onClick={onClickShowNav}
-                className="px-5 py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
+                className="border-t border-white px-5 py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
               >
                 お問い合わせ
               </li>
             </Link>
             <div
               onClick={onClickShowNav}
-              className="mt-2 bg-gray-700 rounded-full text-xs p-2 hover:bg-pink-500 duration-300 hover:opacity-80 cursor-pointer"
+              className="mt-2 bg-gray-700 text-xs p-2 hover:bg-pink-500 duration-300 hover:opacity-80 cursor-pointer"
             >
               閉じる
             </div>

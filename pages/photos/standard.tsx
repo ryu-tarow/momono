@@ -1,4 +1,4 @@
-import { DownloadSvg } from "components/svgComponents";
+import { DLButton } from "components/svg";
 import { BackButton, TitleH1, TitleH2 } from "components/UIkit";
 
 export default function Standard() {
@@ -9,11 +9,11 @@ export default function Standard() {
       <TitleH1 text={"スタンダード"} />
 
       <TitleH2 text={"チャイナ服"} color={"bg-red-500 text-white"} />
-      
+
       <div className="grid grid-cols-2 w-11/12 m-auto">
 
         <div>
-          <DownloadSvg
+          <DLButton
             photo={`${url}/photos/china.png`}
             photoName={"china.png"}
           />
@@ -21,7 +21,7 @@ export default function Standard() {
         </div>
 
         <div>
-          <DownloadSvg
+          <DLButton
             photo={`${url}/photos/china_02.png`}
             photoName={"china02.png"}
           />

@@ -1,9 +1,9 @@
-interface PhotoProps {
+interface DLButtonProps {
   photo: string;
   photoName: string;
 }
 
-export const DownloadSvg = ({ photo, photoName }: PhotoProps) => {
+export const DLButton = ({ photo, photoName }: DLButtonProps) => {
   return (
     <div className="p-1 absolute">
       <a href={photo} download={photoName}>
