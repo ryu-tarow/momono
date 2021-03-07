@@ -4,23 +4,31 @@ import { PhotoCard, SNSLink, ShareButton } from "components/UIkit/index";
 export default function Home() {
   //TOPページの基本データ
   const url = "https://msrmmn2.vercel.app";
-  const image = "photos/nino_com.png";
+  const image = "photos/nino.png";
   const title = "MOMONO";
+  const pageTitle = "MOMONO";
   const description = "TOPページの説明";
 
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <meta charSet="utf-8" />
+        <title>{pageTitle}</title>
         <link rel="icon" href="" />
 
+        <meta name="description" content={description} />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+        <meta property="og:site_name" content={title} />
+        <meta property="og:title" content={pageTitle} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
         <meta property="og:image" content={`${url}/${image}`} />
-        <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:locale" content="ja_JP" />
-
+        
+        {/* TwitterCardの設定 */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@msrmmn" />
         <meta property="twitter:image" content={`${url}/${image}`} />
@@ -57,28 +65,29 @@ export default function Home() {
             </h3>
             <a href="https://note.com/msrmmn">
               <div className="">
-              <img
-                src="note_com.png"
-                className="rounded-t-none rounded-2xl duration-300 hover:opacity-70 px-1 mb-2"
+                <img
+                  src="note_com.png"
+                  alt="schedule"
+                  className="rounded-t-none rounded-2xl duration-300 hover:opacity-70 px-1 mb-2"
                 />
-                </div>
+              </div>
             </a>
           </div>
-          </div>
-          <div className="grid grid-cols-2 m-auto w-11/12">
-            <PhotoCard
-              text={"プロフィール"}
-              color={"border-pink-400 text-pink-500"}
-              url={"/profile"}
-              img={"profile.png"}
-            />
-            <PhotoCard
-              text={"コスプレ"}
-              color={"border-purple-400 text-purple-500"}
-              url={"/photos"}
-              img={"photos/nino.png"}
-            />
-          </div>
+        </div>
+        <div className="grid grid-cols-2 m-auto w-11/12">
+          <PhotoCard
+            text={"プロフィール"}
+            color={"border-pink-400 text-pink-500"}
+            url={"/profile"}
+            img={"profile.png"}
+          />
+          <PhotoCard
+            text={"コスプレ"}
+            color={"border-purple-400 text-purple-500"}
+            url={"/photos"}
+            img={"photos/nino.png"}
+          />
+        </div>
       </div>
       <ShareButton url={url} text={description} />
     </>

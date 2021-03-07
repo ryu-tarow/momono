@@ -25,6 +25,8 @@ export default function Header() {
             </div>
           )}
         </button>
+
+        {/* ヘッダーに表示される */}
         <nav className="hidden sm:flex py-3 text-white">
           <ul className="flex">
             <Link href="/profile">
@@ -45,24 +47,41 @@ export default function Header() {
           </ul>
         </nav>
       </div>
+
+      {/* ハンバーガーメニューのクリックで表示される */}
       {showNav && (
         <nav>
           <ul className="mt-2 text-center text-white md:hidden">
             <Link href="/profile">
-              <li className="px-5 border-b py-2 border-white hover:bg-pink-500 duration-300 hover:opacity-80">
+              <li
+                onClick={onClickShowNav}
+                className="px-5 border-b py-2 border-white hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
+              >
                 プロフィール
               </li>
             </Link>
             <Link href="/photos">
-              <li className="px-5 py-2 border-b border-white hover:bg-pink-500 duration-300 hover:opacity-80">
+              <li
+                onClick={onClickShowNav}
+                className="px-5 py-2 border-b border-white hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
+              >
                 写真集
               </li>
             </Link>
             <Link href="/contact">
-              <li className="px-5 py-2 hover:bg-pink-500 duration-300 hover:opacity-80">
+              <li
+                onClick={onClickShowNav}
+                className="px-5 py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
+              >
                 お問い合わせ
               </li>
             </Link>
+            <div
+              onClick={onClickShowNav}
+              className="mt-2 bg-gray-700 rounded-full text-xs p-2 hover:bg-pink-500 duration-300 hover:opacity-80 cursor-pointer"
+            >
+              閉じる
+            </div>
           </ul>
         </nav>
       )}

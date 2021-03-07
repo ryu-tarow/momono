@@ -1,9 +1,10 @@
-import { TitleH1, TextCategory } from "components/UIkit/index";
+import { TitleH1, TextCategory, BackButton } from "components/UIkit/index";
 
 export default function Profile() {
   return (
     <>
       <div className="max-w-screen-lg m-auto">
+        <BackButton link={"/"} />
         <TitleH1 text={"プロフィール"} />
         <div className="grid grid-cols-1 sm:grid-cols-2">
           <div className="sm:ml-5">
