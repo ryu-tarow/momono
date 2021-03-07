@@ -17,8 +17,8 @@ export default function Home() {
         <link rel="icon" href="" />
 
         <meta name="description" content={description} />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
         <meta property="og:site_name" content={title} />
         <meta property="og:title" content={pageTitle} />
@@ -27,7 +27,7 @@ export default function Home() {
         <meta property="og:image" content={`${url}/${image}`} />
         <meta property="og:description" content={description} />
         <meta property="og:locale" content="ja_JP" />
-        
+
         {/* TwitterCardの設定 */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@msrmmn" />
