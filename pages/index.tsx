@@ -50,25 +50,35 @@ export default function Home() {
             color={"bg-gray-800 mx-1"}
           />
         </ul>
-        <div className="grid sm:grid-cols-2 w-11/12 m-auto">
+        <div className="w-11/12 m-auto">
           <div>
-            <h3 className="text-center border border-gray-400 rounded-lg text-gray-500 p-1 mx-1">
-              ▼ 今月の予定
+            <h3 className="text-center border border-gray-400 rounded-b-none rounded-2xl text-gray-500 p-1 mx-1 sm:p-2">
+              今月の予定
             </h3>
             <a href="https://note.com/msrmmn">
+              <div className="">
               <img
                 src="note_com.png"
-                className="w-screen object-cover h-32 sm:h-72 rounded-lg duration-300 hover:opacity-70 p-1"
-              />
+                className="rounded-t-none rounded-2xl duration-300 hover:opacity-70 px-1 mb-2"
+                />
+                </div>
             </a>
           </div>
-          <PhotoCard
-            text={"▼ コスプレ集"}
-            color={"border-purple-400 text-purple-500"}
-            url={"/photos"}
-            img={"photos/nino_com.png"}
-          />
-        </div>
+          </div>
+          <div className="grid grid-cols-2 m-auto w-11/12">
+            <PhotoCard
+              text={"プロフィール"}
+              color={"border-pink-400 text-pink-500"}
+              url={"/profile"}
+              img={"profile.png"}
+            />
+            <PhotoCard
+              text={"コスプレ"}
+              color={"border-purple-400 text-purple-500"}
+              url={"/photos"}
+              img={"photos/nino.png"}
+            />
+          </div>
       </div>
       <ShareButton url={url} text={description} />
     </>

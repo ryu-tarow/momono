@@ -6,11 +6,11 @@ export default function Profile() {
       <div className="max-w-screen-lg m-auto">
         <TitleH1 text={"プロフィール"} />
         <div className="grid grid-cols-1 sm:grid-cols-2">
-          <div className="m-auto">
+          <div className="sm:ml-5">
             <img
               src="profile.png"
               alt="profile_img"
-              className="w-11/12 m-auto px-1 rounded-lg"
+              className="w-11/12 p-2 m-auto rounded-3xl"
             />
           </div>
           <ul className="pt-4 p-2 text-center">
@@ -25,8 +25,8 @@ export default function Profile() {
             />
           </ul>
         </div>
-        <ul className="text-center p-1">
-          <h3 className="py-1.5 text-center bg-pink-400 text-white rounded-lg">
+        <ul className="text-center p-1 w-11/12 m-auto">
+          <h3 className="py-1.5 text-center bg-pink-400 text-white rounded-2xl">
             経歴
           </h3>
           <li className="pt-5">

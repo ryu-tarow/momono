@@ -10,13 +10,13 @@ interface CardProps {
 export const PhotoCard = ({ text, color, url, img }: CardProps) => {
   return (
     <div>
-      <h3 className={`text-center border rounded-lg p-1 mx-1 ${color}`}>
+      <h2 className={`text-center border rounded-2xl rounded-b-none p-1 mx-1 sm:py-2 text-sm sm:text-base ${color}`}>
         {text}
-      </h3>
+      </h2>
       <Link href={url}>
         <img
           src={img}
-          className="w-screen object-cover h-48 sm:h-72 rounded-lg cursor-pointer duration-300 hover:opacity-70 p-1"
+          className={`w-screen object-cover rounded-2xl rounded-t-none cursor-pointer duration-300 hover:opacity-70 px-1 pb-1 ${color}`}
         />
       </Link>
     </div>
