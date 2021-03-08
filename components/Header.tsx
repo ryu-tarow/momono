@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Header() {
   const [showNav, setShowNav] = useState<boolean>(false);
   const [showPhotoCategory, setShowPhotoCategory] = useState<boolean>(false);
-  
+
   const onClickShowNav = () => {
     setShowNav(!showNav);
   };
@@ -16,9 +16,7 @@ export default function Header() {
     <header className="fixed w-screen py-2 bg-pink-300 z-10">
       <div className="h-12 flex justify-between max-w-screen-lg m-auto">
         <Link href="/">
-          <div className="pt-3 pl-5 text-white cursor-pointer">
-            MOMONO（仮）
-          </div>
+          <div className="pt-3 pl-5 text-white cursor-pointer">MSRMMN.ML</div>
         </Link>
         <button onClick={onClickShowNav} className="mr-2">
           {showNav ? (
@@ -66,18 +64,39 @@ export default function Header() {
                 プロフィール
               </li>
             </Link>
-              <li
-                onClick={onClickShowPhotoCategory}
-                className="px-5 py-2 border-t border-white hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
-              >
+            <li
+              onClick={onClickShowPhotoCategory}
+              className="px-5 py-2 border-t border-white hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
+            >
               写真集
-              </li>
+            </li>
             {showPhotoCategory && (
               <ul className="text-sm">
                 {/* <Link href="/photos"><li onClick={onClickShowNav} className="border-b border-pink-200 py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer">カテゴリ一覧</li></Link> */}
-                <Link href="/photos/standard"><li onClick={onClickShowNav} className="py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer">スタンダード</li></Link>
-                <Link href="/photos/anime"><li onClick={onClickShowNav} className="py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer">アニメ</li></Link>
-                <Link href="/photos/unique"><li onClick={onClickShowNav} className="py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer">ユニーク</li></Link>
+                <Link href="/photos/standard">
+                  <li
+                    onClick={onClickShowNav}
+                    className="py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
+                  >
+                    スタンダード
+                  </li>
+                </Link>
+                <Link href="/photos/anime">
+                  <li
+                    onClick={onClickShowNav}
+                    className="py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
+                  >
+                    アニメ
+                  </li>
+                </Link>
+                <Link href="/photos/unique">
+                  <li
+                    onClick={onClickShowNav}
+                    className="py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
+                  >
+                    ユニーク
+                  </li>
+                </Link>
               </ul>
             )}
             <Link href="/contact">

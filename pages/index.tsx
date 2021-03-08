@@ -3,10 +3,10 @@ import { PhotoCard, SNSLink, ShareButton } from "components/UIkit/index";
 
 export default function Home() {
   //TOPページの基本データ
-  const url = "https://msrmmn2.vercel.app";
-  const image = "photos/nino.png";
-  const title = "MOMONO";
-  const pageTitle = "MOMONO";
+  const url = "https://msrmmn.ml";
+  const image = "top-image3.png";
+  const title = "真白桃乃";
+  const pageTitle = "真白桃乃";
   const description = "TOPページの説明";
 
   return (
@@ -34,10 +34,26 @@ export default function Home() {
         <meta property="twitter:image" content={`${url}/${image}`} />
       </Head>
       <div className="m-auto max-w-screen-lg">
+        <div className="absolute w-1/2 md:w-1/3">
+          <h3 className="text-center text-sm mt-3 ml-5 mr-1 p-1.5 text-white bg-gray-700 opacity-80 rounded-2xl rounded-b-none sm:mt-9">
+            スケジュール
+          </h3>
+          <div className="ml-4">
+            <a href="https://note.com/msrmmn">
+              <div className="">
+                <img
+                  src="snsIcons/note.png"
+                  alt="schedule"
+                  className="rounded-t-none rounded-2xl duration-300 hover:opacity-70 px-1 mb-2"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
         <div className="">
           <img
-            src="top_image.png"
-            className="w-screen object-cover h-56 sm:h-72 md:h-96"
+            src="top-image3.png"
+            className="w-screen object-cover bg-gray-100"
             alt="top-image"
           />
         </div>
@@ -58,22 +74,7 @@ export default function Home() {
             color={"bg-gray-800 mx-1"}
           />
         </ul>
-        <div className="w-11/12 m-auto">
-          <div>
-            <h3 className="text-center border border-gray-400 rounded-b-none rounded-2xl text-gray-500 p-1 mx-1 sm:p-2">
-              今月の予定
-            </h3>
-            <a href="https://note.com/msrmmn">
-              <div className="">
-                <img
-                  src="snsIcons/note.png"
-                  alt="schedule"
-                  className="rounded-t-none rounded-2xl duration-300 hover:opacity-70 px-1 mb-2"
-                />
-              </div>
-            </a>
-          </div>
-        </div>
+
         <div className="grid grid-cols-2 m-auto w-11/12">
           <PhotoCard
             text={"プロフィール"}

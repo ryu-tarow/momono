@@ -16,8 +16,8 @@ export default function Profile() {
           </div>
           <ul className="pt-4 p-2 text-center">
             <TextCategory category={"name"} text={"真白桃乃"} />
-            <TextCategory category={"date of birth"} text={"1995年10月6日"} />
-            <TextCategory category={"from"} text={"福岡県"} />
+            <TextCategory category={"birthday"} text={"10月6日"} />
+            <TextCategory category={"from"} text={"福岡県（ぴんこ王国）"} />
             <TextCategory category={"blood type"} text={"AB型"} />
             <TextCategory category={"height"} text={"156cm"} />
             <TextCategory
