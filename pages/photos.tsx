@@ -25,6 +25,12 @@ export default function Photos() {
             url={"/photos/unique"}
             img={"photos/fox.png"}
           />
+          <PhotoCard
+            text={"カルチャー"}
+            color={"border-blue-500 text-blue-600"}
+            url={"/photos/culture"}
+            img={"photos/kimono_05.png"}
+          />
         </div>
       </div>
     </>

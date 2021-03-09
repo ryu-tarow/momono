@@ -97,6 +97,14 @@ export default function Header() {
                     ユニーク
                   </li>
                 </Link>
+                <Link href="/photos/culture">
+                  <li
+                    onClick={onClickShowNav}
+                    className="py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
+                  >
+                    カルチャー
+                  </li>
+                </Link>
               </ul>
             )}
             <Link href="/contact">
