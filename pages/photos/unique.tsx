@@ -23,6 +23,7 @@ export default function Unique() {
         <title>{pageTitle}</title>
         <link rel="icon" href="icon.png" />
 
+        <meta name="keywords" content="真白桃乃"/>
         <meta name="description" content={description} />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -49,8 +50,8 @@ export default function Unique() {
         <div>
           <TitleH2 text={"キツネ"} color={"bg-yellow-500 text-white"} />
           <ul className="grid grid-cols-2 w-11/12 m-auto">
-            <DLImage photo={"fox.png"} photoName={"fox.png"} />
-            <DLImage photo={"fox_02.png"} photoName={"fox_02.png"} />
+            <DLImage photo={"fox.png"} photoName={"fox"} />
+            <DLImage photo={"fox_02.png"} photoName={"fox_02"} />
           </ul>
           <div className="bg-yellow-500 p-1.5 w-11/12 m-auto rounded-xl rounded-t-none" />
         </div>

@@ -23,6 +23,7 @@ export default function Standard() {
         <title>{pageTitle}</title>
         <link rel="icon" href="icon.png" />
 
+        <meta name="keywords" content="真白桃乃"/>
         <meta name="description" content={description} />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -48,8 +49,8 @@ export default function Standard() {
         <div>
           <TitleH2 text={"チャイナ服"} color={"bg-red-500 text-white"} />
           <ul className="grid grid-cols-2 w-11/12 m-auto ">
-            <DLImage photo={"china.png"} photoName={"china.png"} />
-            <DLImage photo={"china_02.png"} photoName={"china02.png"} />
+            <DLImage photo={"china.png"} photoName={"china"} />
+            <DLImage photo={"china_02.png"} photoName={"china02"} />
           </ul>
           <div className="bg-red-500 p-1.5 w-11/12 m-auto rounded-xl rounded-t-none" />
         </div>
