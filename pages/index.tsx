@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { PhotoCard, SNSLink, ShareButton } from "components/UIkit/index";
+import { PhotoCard, SNSLink, ShareButton } from "components/UIkit";
 
 export default function Home() {
   //TOPページの基本データ
@@ -14,7 +14,7 @@ export default function Home() {
       <Head>
         <meta charSet="utf-8" />
         <title>{pageTitle}</title>
-        <link rel="icon" href="" />
+        <link rel="icon" href="profile.png" />
 
         <meta name="description" content={description} />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -33,7 +33,7 @@ export default function Home() {
         <meta name="twitter:site" content="@msrmmn" />
         <meta property="twitter:image" content={`${url}/${image}`} />
       </Head>
-      <div className="m-auto max-w-screen-lg">
+      <main className="m-auto max-w-screen-lg">
         <div className="absolute w-1/2 md:w-1/3">
           <h3 className="text-center text-sm mt-3 ml-5 mr-1 p-1.5 text-white bg-gray-700 opacity-80 rounded-2xl rounded-b-none sm:mt-9">
             スケジュール
@@ -51,11 +51,7 @@ export default function Home() {
           </div>
         </div>
         <div className="">
-          <img
-            src="top-image3.png"
-            className="w-screen object-cover bg-gray-100"
-            alt="top-image"
-          />
+          <img src="top-image3.png" className="bg-gray-100" alt="top-image" />
         </div>
         <ul className="flex justify-center w-11/12 m-auto">
           <SNSLink
@@ -89,8 +85,8 @@ export default function Home() {
             img={"photos/nino.png"}
           />
         </div>
-      </div>
-      <ShareButton url={url} text={description} />
+        <ShareButton url={url} text={description} />
+      </main>
     </>
   );
 }

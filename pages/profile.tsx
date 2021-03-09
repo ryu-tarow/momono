@@ -1,9 +1,20 @@
-import { TitleH1, TextCategory, BackButton } from "components/UIkit/index";
+import {
+  TitleH1,
+  TextCategory,
+  BackButton,
+  ShareButton,
+} from "components/UIkit";
+import Head from "next/head";
 
 export default function Profile() {
+  const url = "https://msrmmn.ml/profile";
+  const description = "";
   return (
     <>
-      <div className="max-w-screen-lg m-auto">
+      <Head>
+        <title>プロフィール</title>
+      </Head>
+      <main className="max-w-screen-lg m-auto">
         <BackButton link={"/"} />
         <TitleH1 text={"プロフィール"} />
         <div className="grid grid-cols-1 sm:grid-cols-2">
@@ -39,7 +50,8 @@ export default function Profile() {
             <p className="text-gray-500 text-sm">2019年10月2日〜現在</p>
           </li>
         </ul>
-      </div>
+        <ShareButton url={url} text={description} />
+      </main>
     </>
   );
 }

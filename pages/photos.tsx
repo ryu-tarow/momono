@@ -1,9 +1,13 @@
 import { BackButton, PhotoCard, TitleH1 } from "components/UIkit/index";
+import Head from "next/head";
 
 export default function Photos() {
   return (
     <>
-      <div className="max-w-screen-lg m-auto">
+      <Head>
+        <title>写真集</title>
+      </Head>
+      <main className="max-w-screen-lg m-auto">
         <BackButton link={"/"} />
         <TitleH1 text={"写真集"} />
         <div className="grid grid-cols-2 w-11/12 m-auto">
@@ -32,7 +36,7 @@ export default function Photos() {
             img={"photos/kimono_05.png"}
           />
         </div>
-      </div>
+      </main>
     </>
   );
 }
