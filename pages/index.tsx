@@ -4,10 +4,10 @@ import { PhotoCard, SNSLink, ShareButton } from "components/UIkit";
 export default function Home() {
   //TOPページの基本データ
   const url = "https://msrmmn.ml";
-  const image = "top-image3.png";
-  const title = "真白桃乃";
-  const pageTitle = "真白桃乃";
-  const description = "TOPページの説明";
+  const image = "top.png";
+  const title = "ましものほむペッペ";
+  const pageTitle = "ましものほむペッペ";
+  const description = "真白桃乃のオフィシャルサイト";
 
   return (
     <>
