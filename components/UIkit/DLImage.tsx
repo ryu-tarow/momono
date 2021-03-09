@@ -8,7 +8,7 @@ export const DLImage = ({ photo, photoName }: DLButtonProps) => {
   return (
     <li>
       <div className="p-1 absolute">
-        <a href={`${url}/PhotoSave/${photo}`} download={photoName}>
+        <a href={`${url}/Photos/${photo}`} download={photoName}>
           <svg
             className="bg-white w-8 h-8 p-1 rounded-lg sm:w-12 sm:h-12 duration-300 opacity-40 hover:opacity-80"
             fill="none"

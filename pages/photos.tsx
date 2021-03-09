@@ -42,7 +42,7 @@ export default function Photos() {
             text={"スタンダード"}
             color={"border-red-500 text-red-600"}
             url={"/photos/standard"}
-            img={"photos/china.png"}
+            img={"photos/china_02.png"}
           />
           <PhotoCard
             text={"アニメ"}
