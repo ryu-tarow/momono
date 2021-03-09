@@ -14,14 +14,14 @@ export default function Unique() {
   const image = "photos/fox.png";
   const title = "ましものほむペッペ";
   const pageTitle = "ましものほむペッペ";
-  const description = "写真集｜ユニーク";
+  const description = "真白桃乃の写真集｜ユニーク";
 
   return (
     <>
       <Head>
         <meta charSet="utf-8" />
         <title>{pageTitle}</title>
-        <link rel="icon" href="" />
+        <link rel="icon" href="icon.png" />
 
         <meta name="description" content={description} />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />

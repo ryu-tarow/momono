@@ -16,7 +16,9 @@ export default function Header() {
     <header className="fixed w-screen py-2 bg-pink-300 z-10">
       <div className="h-12 flex justify-between max-w-screen-lg m-auto">
         <Link href="/">
-          <div className="pt-3 pl-5 text-white cursor-pointer">MSRMMN.ML</div>
+          <div className="pt-3 pl-5 text-white cursor-pointer font-mono">
+            ましものほむペッペ
+          </div>
         </Link>
         <button onClick={onClickShowNav} className="mr-2">
           {showNav ? (
@@ -43,11 +45,11 @@ export default function Header() {
                 写真集
               </li>
             </Link>
-            <Link href="/contact">
+            {/* <Link href="/contact">
               <li className="ml-5 mr-8 hover:text-pink-200 cursor-pointer duration-300 hover:opacity-80">
                 お問い合わせ
               </li>
-            </Link>
+            </Link> */}
           </ul>
         </nav>
       </div>
@@ -107,14 +109,14 @@ export default function Header() {
                 </Link>
               </ul>
             )}
-            <Link href="/contact">
+            {/* <Link href="/contact">
               <li
                 onClick={onClickShowNav}
                 className="border-t border-white px-5 py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
               >
                 お問い合わせ
               </li>
-            </Link>
+            </Link> */}
             <div
               onClick={onClickShowNav}
               className="mt-2 bg-gray-700 text-xs p-2 hover:bg-pink-500 duration-300 hover:opacity-80 cursor-pointer"

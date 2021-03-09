@@ -14,14 +14,14 @@ export default function Standard() {
   const image = "photos/china_02.png";
   const title = "ましものほむペッペ";
   const pageTitle = "ましものほむペッペ";
-  const description = "写真集｜スタンダード";
+  const description = "真白桃乃の写真集｜スタンダード";
 
   return (
     <>
       <Head>
         <meta charSet="utf-8" />
         <title>{pageTitle}</title>
-        <link rel="icon" href="" />
+        <link rel="icon" href="icon.png" />
 
         <meta name="description" content={description} />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
