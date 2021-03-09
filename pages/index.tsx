@@ -14,7 +14,7 @@ export default function Home() {
       <Head>
         <meta charSet="utf-8" />
         <title>{pageTitle}</title>
-        <link rel="icon" href="profile.png" />
+        <link rel="icon" href="" />
 
         <meta name="description" content={description} />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -51,7 +51,7 @@ export default function Home() {
           </div>
         </div>
         <div className="">
-          <img src="top-image3.png" className="bg-gray-100" alt="top-image" />
+          <img src="top.png" className="bg-gray-100 w-screen" alt="top-image" />
         </div>
         <ul className="flex justify-center w-11/12 m-auto">
           <SNSLink
