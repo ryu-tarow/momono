@@ -4,7 +4,7 @@ interface DLButtonProps {
 }
 
 export const DLImage = ({ photo, photoName }: DLButtonProps) => {
-  const url = "https://msrmmn.ml/";
+  const url = "https://msrmmn.ml";
   return (
     <li>
       <div className="p-1 absolute">
