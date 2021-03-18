@@ -13,8 +13,8 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed w-screen pb-4 bg-pink-300 z-10">
-      <div className="h-12 flex justify-between max-w-screen-lg m-auto">
+    <header className="fixed w-screen bg-pink-300 z-10 opacity-95">
+      <div className="h-16 flex justify-between max-w-screen-lg m-auto">
         <Link href="/">
           <div className="cursor-pointer">
             <img src="logo.png" className="h-16 ml-2"/>
@@ -22,11 +22,11 @@ export default function Header() {
         </Link>
         <button onClick={onClickShowNav} className="mr-2">
           {showNav ? (
-            <div className="mt-2 border-white w-12 h-12 border rounded-full text-4xl text-white sm:hidden hover:bg-pink-400 duration-300 hover:opacity-70">
+            <div className="border-white w-12 h-12 border rounded-full text-4xl text-white sm:hidden hover:bg-pink-400 duration-300 hover:opacity-70">
               ×
             </div>
           ) : (
-            <div className="mt-2 border-white w-12 h-12 border rounded-full text-4xl text-white sm:hidden hover:bg-pink-400 duration-300 hover:opacity-70">
+            <div className="border-white w-12 h-12 border rounded-full text-4xl text-white sm:hidden hover:bg-pink-400 duration-300 hover:opacity-70">
               =
             </div>
           )}
@@ -119,9 +119,9 @@ export default function Header() {
             </Link> */}
             <div
               onClick={onClickShowNav}
-              className="mt-2 text-xs p-2 hover:bg-pink-500 duration-300 hover:opacity-80 cursor-pointer"
+              className="w-20 rounded-full my-2 m-auto text-xs p-2 bg-pink-400 hover:bg-pink-600 duration-300 hover:opacity-80 cursor-pointer"
             >
-              閉じる
+              とじる
             </div>
           </ul>
         </nav>
