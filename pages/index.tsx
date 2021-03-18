@@ -16,7 +16,7 @@ export default function Home() {
         <title>{pageTitle}</title>
         <link rel="icon" href="icon.png" />
 
-        <meta name="keywords" content="真白桃乃"/>
+        <meta name="keywords" content="真白桃乃" />
         <meta name="description" content={description} />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -71,8 +71,28 @@ export default function Home() {
             color={"bg-gray-800 mx-1"}
           />
         </ul>
-
-        <div className="grid grid-cols-2 m-auto w-11/12">
+        <div className="sm:hidden">
+          <div className="relative">
+            <a href="https://line.me/S/sticker/14670591">
+              <div className="absolute bg-white px-4 py-2 bottom-0 right-4 m-5 rounded-md hover:opacity-50 duration-300 shadow-md">
+                ▶︎ 詳細を見る
+              </div>
+            </a>
+            <img
+              src="/momo_banner.png"
+              className="w-11/12 m-auto rounded-xl p-1 mb-1"
+            />
+          </div>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 m-auto w-11/12">
+          <div className="hidden sm:flex">
+            <PhotoCard
+              text={"LINEスタンプ"}
+              color={"border-green-400 text-green-500"}
+              url={"/line"}
+              img={"momo_banner.png"}
+            />
+          </div>
           <PhotoCard
             text={"プロフィール"}
             color={"border-pink-400 text-pink-500"}

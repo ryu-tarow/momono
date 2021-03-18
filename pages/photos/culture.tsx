@@ -22,8 +22,8 @@ export default function Culture() {
         <meta charSet="utf-8" />
         <title>{pageTitle}</title>
         <link rel="icon" href="icon.png" />
-        
-        <meta name="keywords" content="真白桃乃"/>
+
+        <meta name="keywords" content="真白桃乃" />
         <meta name="description" content={description} />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />

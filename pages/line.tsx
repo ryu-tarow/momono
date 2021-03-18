@@ -4,11 +4,11 @@ import Head from "next/head";
 export default function Photos() {
   //スタンダードページの基本データ
   const url = "https://msrmmn.ml";
-  const url02 = "photos";
-  const image = "photos/kimono.png";
+  const url02 = "line";
+  const image = "photos/line";
   const title = "ましものほむペッペ";
   const pageTitle = "ましものほむペッペ";
-  const description = "ましものほむペッペ｜写真集";
+  const description = "ましものほむペッペ｜LINEスタンプ";
 
   return (
     <>
@@ -37,32 +37,25 @@ export default function Photos() {
       </Head>
       <main className="max-w-screen-lg m-auto">
         <BackButton link={"/"} />
-        <TitleH1 text={"写真集"} />
-        <div className="grid grid-cols-2 w-11/12 m-auto">
-          <PhotoCard
-            text={"スタンダード"}
-            color={"border-red-500 text-red-600"}
-            url={"/photos/standard"}
-            img={"photos/china_02.png"}
-          />
-          <PhotoCard
-            text={"アニメ"}
-            color={"border-purple-400 text-purple-500"}
-            url={"/photos/anime"}
-            img={"photos/nino.png"}
-          />
-          <PhotoCard
-            text={"ユニーク"}
-            color={"border-yellow-500 text-yellow-600"}
-            url={"/photos/unique"}
-            img={"photos/fox.png"}
-          />
-          <PhotoCard
-            text={"カルチャー"}
-            color={"border-blue-500 text-blue-600"}
-            url={"/photos/culture"}
-            img={"photos/kimono_05.png"}
-          />
+        <TitleH1 text={"LINEスタンプ"} />
+              <div className="w-11/12 m-auto mt-3">
+                  <div className="grid sm:grid-cols-2">
+          <div>
+            <img
+              src="momo_banner.png"
+              className="rounded-lg"
+            />
+            <a href="https://line.me/S/sticker/14670591">
+              <p className="border-green-500 text-green-500 border rounded-full p-2 mt-2 text-center hover:bg-green-200 duration-300">
+                LINEスタンプを見る
+              </p>
+            </a>
+        </div>
+                      <div>
+                          
+                      <img src="mashimon.jpg" className="w-full p-5" />
+                      </div>
+                      </div>
         </div>
         <ShareButton url={`${url}/${url02}`} text={description} />
       </main>
