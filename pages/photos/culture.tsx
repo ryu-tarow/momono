@@ -12,9 +12,9 @@ export default function Culture() {
   const url = "https://msrmmn.ml";
   const url02 = "photos/culture";
   const image = "photos/kimono_05.png";
-  const title = "ましものほむペッペ";
-  const pageTitle = "ましものほむペッペ";
-  const description = "真白桃乃の写真集｜カルチャー";
+  const title = "ましものほむぺでございましも";
+  const pageTitle = "ましものほむぺでございましも";
+  const description = "ましもの写真集｜カルチャー";
 
   return (
     <>

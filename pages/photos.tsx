@@ -6,9 +6,9 @@ export default function Photos() {
   const url = "https://msrmmn.ml";
   const url02 = "photos";
   const image = "photos/kimono.png";
-  const title = "ましものほむペッペ";
-  const pageTitle = "ましものほむペッペ";
-  const description = "ましものほむペッペ｜写真集";
+  const title = "ましものほむぺでございましも";
+  const pageTitle = "ましものほむぺでございましも";
+  const description = "ましものほむぺでございましも｜写真集";
 
   return (
     <>
@@ -37,7 +37,7 @@ export default function Photos() {
       </Head>
       <main className="max-w-screen-lg m-auto">
         <BackButton link={"/"} />
-        <TitleH1 text={"写真集"} />
+        <TitleH1 text={"フォトアルバム"} />
         <div className="grid grid-cols-2 w-11/12 m-auto">
           <PhotoCard
             text={"スタンダード"}

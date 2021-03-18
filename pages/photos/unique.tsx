@@ -12,9 +12,9 @@ export default function Unique() {
   const url = "https://msrmmn.ml";
   const url02 = "photos/unique";
   const image = "photos/fox.png";
-  const title = "ましものほむペッペ";
-  const pageTitle = "ましものほむペッペ";
-  const description = "真白桃乃の写真集｜ユニーク";
+  const title = "ましものほむぺでございましも";
+  const pageTitle = "ましものほむぺでございましも";
+  const description = "ましもの写真集｜ユニーク";
 
   return (
     <>

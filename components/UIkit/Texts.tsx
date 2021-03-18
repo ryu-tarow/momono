@@ -16,7 +16,7 @@ export const TitleH1 = ({ text }: TitleH1Props) => {
   return (
     <div className="w-11/12 m-auto">
       <h1 className="text-center border border-pink-500 rounded-2xl mx-1 mb-1 mt-3 p-2 text-pink-500">
-        {text}
+        <b>{text}</b>
       </h1>
     </div>
   );
@@ -28,7 +28,7 @@ export const TitleH2 = ({ text, color }: TitleH2Props) => {
       <h2
         className={`text-center mt-2 text-sm p-1 rounded-xl rounded-b-none  sm:text-base sm:p-1 ${color}`}
       >
-        {text}
+        <b>{text}</b>
       </h2>
     </div>
   );

@@ -12,9 +12,9 @@ export default function Anime() {
   const url = "https://msrmmn.ml";
   const url02 = "photos/anime";
   const image = "photos/gantz.png";
-  const title = "ましものほむペッペ";
-  const pageTitle = "ましものほむペッペ";
-  const description = "真白桃乃の写真集｜アニメ";
+  const title = "ましものほむぺでございましも";
+  const pageTitle = "ましものほむぺでございましも";
+  const description = "ましもの写真集｜アニメ";
 
   return (
     <>

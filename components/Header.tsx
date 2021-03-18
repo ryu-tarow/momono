@@ -13,20 +13,20 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed w-screen py-2 bg-pink-300 z-10">
+    <header className="fixed w-screen pb-4 bg-pink-300 z-10">
       <div className="h-12 flex justify-between max-w-screen-lg m-auto">
         <Link href="/">
-          <div className="pt-3 pl-5 text-white cursor-pointer font-mono">
-            ましものほむペッペ
+          <div className="cursor-pointer">
+            <img src="logo.png" className="h-16 ml-2"/>
           </div>
         </Link>
         <button onClick={onClickShowNav} className="mr-2">
           {showNav ? (
-            <div className="border-white w-12 h-12 border rounded-full text-4xl text-white sm:hidden hover:bg-pink-400 duration-300 hover:opacity-70">
+            <div className="mt-2 border-white w-12 h-12 border rounded-full text-4xl text-white sm:hidden hover:bg-pink-400 duration-300 hover:opacity-70">
               ×
             </div>
           ) : (
-            <div className="border-white w-12 h-12 border rounded-full text-4xl text-white sm:hidden hover:bg-pink-400 duration-300 hover:opacity-70">
+            <div className="mt-2 border-white w-12 h-12 border rounded-full text-4xl text-white sm:hidden hover:bg-pink-400 duration-300 hover:opacity-70">
               =
             </div>
           )}
@@ -36,13 +36,13 @@ export default function Header() {
         <nav className="hidden sm:flex py-3 text-white">
           <ul className="flex">
             <Link href="/profile">
-              <li className="mx-5 hover:text-pink-200 cursor-pointer duration-300 hover:opacity-80">
+              <li className="mx-5 mt-2 hover:text-pink-200 cursor-pointer duration-300 hover:opacity-80">
                 プロフィール
               </li>
             </Link>
             <Link href="/photos">
-              <li className="mx-5 hover:text-pink-200 cursor-pointer duration-300 hover:opacity-80">
-                写真集
+              <li className="mx-5 mt-2 hover:text-pink-200 cursor-pointer duration-300 hover:opacity-80">
+                フォトアルバム
               </li>
             </Link>
             {/* <Link href="/contact">
@@ -68,9 +68,9 @@ export default function Header() {
             </Link>
             <li
               onClick={onClickShowPhotoCategory}
-              className="px-5 py-2 border-t border-white hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
+              className="px-5 py-2 border-t border-pink-200 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
             >
-              写真集
+              フォトアルバム
             </li>
             {showPhotoCategory && (
               <ul className="text-sm">
@@ -119,7 +119,7 @@ export default function Header() {
             </Link> */}
             <div
               onClick={onClickShowNav}
-              className="mt-2 bg-gray-700 text-xs p-2 hover:bg-pink-500 duration-300 hover:opacity-80 cursor-pointer"
+              className="mt-2 text-xs p-2 hover:bg-pink-500 duration-300 hover:opacity-80 cursor-pointer"
             >
               閉じる
             </div>

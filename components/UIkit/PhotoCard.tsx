@@ -13,7 +13,7 @@ export const PhotoCard = ({ text, color, url, img }: CardProps) => {
       <h2
         className={`text-center border rounded-2xl rounded-b-none p-1 mx-1 sm:py-2 text-sm sm:text-base ${color}`}
       >
-        {text}
+        <b>{text}</b>
       </h2>
       <Link href={url}>
         <img

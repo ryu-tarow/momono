@@ -12,9 +12,9 @@ export default function Standard() {
   const url = "https://msrmmn.ml";
   const url02 = "photos/standard";
   const image = "photos/china_02.png";
-  const title = "ましものほむペッペ";
-  const pageTitle = "ましものほむペッペ";
-  const description = "真白桃乃の写真集｜スタンダード";
+  const title = "ましものほむぺでございましも";
+  const pageTitle = "ましものほむぺでございましも";
+  const description = "ましもの写真集｜スタンダード";
 
   return (
     <>

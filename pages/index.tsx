@@ -5,8 +5,8 @@ export default function Home() {
   //TOPページの基本データ
   const url = "https://msrmmn.ml";
   const image = "top.png";
-  const title = "ましものほむペッペ";
-  const pageTitle = "ましものほむペッペ";
+  const title = "ましものほむぺでございましも";
+  const pageTitle = "ましものほむぺでございましも";
   const description = "真白桃乃のオフィシャルサイト";
 
   return (
@@ -37,7 +37,7 @@ export default function Home() {
       <main className="m-auto max-w-screen-lg">
         <div className="absolute w-1/2 md:w-1/3">
           <h3 className="text-center text-sm mt-3 ml-5 mr-1 p-1.5 text-white bg-gray-700 opacity-80 rounded-2xl rounded-b-none sm:mt-9">
-            スケジュール
+            <b>スケジュール</b>
           </h3>
           <div className="ml-4">
             <a href="https://note.com/msrmmn">

@@ -11,9 +11,9 @@ export default function Profile() {
   const url = "https://msrmmn.ml";
   const url02 = "profile";
   const image = "profile.png";
-  const title = "ましものほむペッペ";
-  const pageTitle = "ましものほむペッペ";
-  const description = "ましものほむペッペ｜プロフィール";
+  const title = "ましものほむぺでございましも";
+  const pageTitle = "ましものほむぺでございましも";
+  const description = "ましものほむぺでございましも｜プロフィール";
 
   return (
     <>
@@ -65,7 +65,7 @@ export default function Profile() {
         </div>
         <ul className="text-center p-1 w-11/12 m-auto">
           <h3 className="py-1.5 text-center bg-pink-400 text-white rounded-2xl">
-            経歴
+            <b>キャリア</b>
           </h3>
           <li className="pt-5">
             <h4 className="">九州出ちゃう！研究生</h4>
