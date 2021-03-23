@@ -17,7 +17,7 @@ export default function Header() {
       <div className="h-16 flex justify-between max-w-screen-lg m-auto">
         <Link href="/">
           <div className="cursor-pointer">
-            <img src="logo.png" className="h-16 ml-2"/>
+            <img src="logo.png" className="h-16 ml-2" />
           </div>
         </Link>
         <button onClick={onClickShowNav} className="mr-2">
@@ -109,6 +109,14 @@ export default function Header() {
                 </Link>
               </ul>
             )}
+            <Link href="/line">
+              <li
+                onClick={onClickShowNav}
+                className="border-t border-pink-200 px-5 py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
+              >
+                LINEスタンプ
+              </li>
+            </Link>
             {/* <Link href="/contact">
               <li
                 onClick={onClickShowNav}

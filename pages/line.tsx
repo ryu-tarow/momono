@@ -1,4 +1,4 @@
-import { BackButton, PhotoCard, TitleH1, ShareButton } from "components/UIkit";
+import { BackButton, TitleH1, ShareButton } from "components/UIkit";
 import Head from "next/head";
 
 export default function Photos() {
@@ -7,8 +7,8 @@ export default function Photos() {
   const url02 = "line";
   const image = "photos/line";
   const title = "ましものほむぺでございましも";
-  const pageTitle = "ましものほむぺでございましも";
-  const description = "ましものほむぺでございましも｜LINEスタンプ";
+  const pageTitle = "ましものほむぺでございましも｜LINEスタンプ";
+  const description = "真白桃乃オフィシャルサイト";
 
   return (
     <>
@@ -38,21 +38,51 @@ export default function Photos() {
       <main className="max-w-screen-lg m-auto">
         <BackButton link={"/"} />
         <TitleH1 text={"LINEスタンプ"} />
-        <div className="w-11/12 m-auto mt-3">
-          <div className="grid sm:grid-cols-2">
-            <div>
-              <img src="momo_banner.png" className="rounded-lg" />
+        <div className="w-11/12 m-auto">
+          <div className="">
+            <div className="">
+              <div className="grid sm:grid-cols-2">
+                <img src="icon.png" className="m-auto" />
+                <div className="py-5">
+                  <h2 className="text-center text-lg">
+                    <b>ましもんって？</b>
+                  </h2>
+                  <p className="py-2 px-3">
+                    真白桃乃の優しい心が生み出したばけもの。ぴんこ王国に生息。
+                    <br />
+                    真白桃乃のように温厚でとても優しいが空腹時は見境なく何もかも食べ尽くす。
+                    <br />
+                    この前は大量のコンクリートを食べた。敵の首を頭の輪っかで締めて大爆発させるのが得意技。
+                    <br />
+                    ピンコボンバー。
+                  </p>
+                </div>
+              </div>
               <a href="https://line.me/S/sticker/14670591">
-                <p className="border-green-500 text-green-500 border rounded-full p-2 mt-2 text-center hover:bg-green-200 duration-300">
-                  LINEスタンプを見る
+                <p className="border-green-500 text-green-500 border rounded-full p-2 mt-2 text-center hover:bg-green-400 hover:text-white duration-300">
+                  ▶︎ LINEスタンプ第一弾
                 </p>
               </a>
             </div>
-            <div>
-              <img src="mashimon.jpg" className="w-full p-5" />
+            <p className="text-center pt-3 pb-2 text-sm text-gray-400">
+              参考画像（2）
+            </p>
+            <div className="grid sm:grid-cols-2">
+              <div>
+                <img src="line/sticker01.jpg" alt="" className="p-1" />
+              </div>
+              <div>
+                <img src="line/sticker02.jpg" alt="" className="p-1" />
+              </div>
             </div>
           </div>
+          <a href="https://line.me/S/sticker/14670591">
+            <p className="border-gray-500 text-gray-500 border rounded-full p-2 mt-2 text-center hover:opacity-50 duration-300">
+              ▶︎ 詳しく見る
+            </p>
+          </a>
         </div>
+        <br />
         <ShareButton url={`${url}/${url02}`} text={description} />
       </main>
     </>

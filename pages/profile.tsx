@@ -12,8 +12,8 @@ export default function Profile() {
   const url02 = "profile";
   const image = "profile.png";
   const title = "ましものほむぺでございましも";
-  const pageTitle = "ましものほむぺでございましも";
-  const description = "ましものほむぺでございましも｜プロフィール";
+  const pageTitle = "ましものほむぺでございましも｜プロフィール";
+  const description = "真白桃乃オフィシャルサイト";
 
   return (
     <>

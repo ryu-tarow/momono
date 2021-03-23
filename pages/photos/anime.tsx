@@ -13,8 +13,8 @@ export default function Anime() {
   const url02 = "photos/anime";
   const image = "photos/gantz.png";
   const title = "ましものほむぺでございましも";
-  const pageTitle = "ましものほむぺでございましも";
-  const description = "ましもの写真集｜アニメ";
+  const pageTitle = "ましものほむぺでございましも｜フォトアルバム";
+  const description = "カテゴリー：アニメ";
 
   return (
     <>
@@ -63,6 +63,24 @@ export default function Anime() {
             <DLImage photo={"nino_02.png"} photoName={"nino_02"} />
           </ul>
           <div className="bg-purple-500 p-1.5 w-11/12 m-auto rounded-xl rounded-t-none" />
+        </div>
+
+        {/* デスノート */}
+        <div>
+          <TitleH2 text={"デスノート"} color={"bg-gray-800 text-white"} />
+          <ul className="grid grid-cols-2 w-11/12 m-auto bg-gray-600">
+            <DLImage photo={"misa.png"} photoName={"misa"} />
+          </ul>
+          <div className="bg-gray-800 p-1.5 w-11/12 m-auto rounded-xl rounded-t-none" />
+        </div>
+
+        {/* ボーカロイド */}
+        <div>
+          <TitleH2 text={"ボーカロイド"} color={"bg-green-500 text-white"} />
+          <ul className="grid grid-cols-2 w-11/12 m-auto bg-green-300">
+            <DLImage photo={"miku.png"} photoName={"miku"} />
+          </ul>
+          <div className="bg-green-500 p-1.5 w-11/12 m-auto rounded-xl rounded-t-none" />
         </div>
 
         <ShareButton url={`${url}/${url02}`} text={description} />

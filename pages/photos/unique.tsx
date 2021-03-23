@@ -13,8 +13,8 @@ export default function Unique() {
   const url02 = "photos/unique";
   const image = "photos/fox.png";
   const title = "ましものほむぺでございましも";
-  const pageTitle = "ましものほむぺでございましも";
-  const description = "ましもの写真集｜ユニーク";
+  const pageTitle = "ましものほむぺでございましも｜フォトアルバム";
+  const description = "カテゴリー：ユニーク";
 
   return (
     <>
@@ -54,6 +54,15 @@ export default function Unique() {
             <DLImage photo={"fox_02.png"} photoName={"fox_02"} />
           </ul>
           <div className="bg-yellow-500 p-1.5 w-11/12 m-auto rounded-xl rounded-t-none" />
+        </div>
+
+        {/* トナカイ */}
+        <div>
+          <TitleH2 text={"トナカイ"} color={"bg-yellow-700 text-white"} />
+          <ul className="grid grid-cols-2 w-11/12 m-auto bg-yellow-600">
+            <DLImage photo={"reindeer.png"} photoName={"fox"} />
+          </ul>
+          <div className="bg-yellow-700 p-1.5 w-11/12 m-auto rounded-xl rounded-t-none" />
         </div>
         <ShareButton url={`${url}/${url02}`} text={description} />
       </main>

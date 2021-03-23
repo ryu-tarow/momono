@@ -7,8 +7,8 @@ export default function Photos() {
   const url02 = "photos";
   const image = "photos/kimono.png";
   const title = "ましものほむぺでございましも";
-  const pageTitle = "ましものほむぺでございましも";
-  const description = "ましものほむぺでございましも｜写真集";
+  const pageTitle = "ましものほむぺでございましも｜フォトアルバム";
+  const description = "真白桃乃オフィシャルサイト";
 
   return (
     <>

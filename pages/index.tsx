@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { PhotoCard, SNSLink, ShareButton } from "components/UIkit";
+import Link from "next/link";
 
 export default function Home() {
   //TOPページの基本データ
@@ -73,11 +74,11 @@ export default function Home() {
         </ul>
         <div className="sm:hidden">
           <div className="relative">
-            <a href="https://line.me/S/sticker/14670591">
+            <Link href="/line">
               <div className="absolute bg-white px-4 py-2 bottom-0 right-4 m-5 rounded-md hover:opacity-50 duration-300 shadow-md">
                 ▶︎ 詳細を見る
               </div>
-            </a>
+            </Link>
             <img
               src="/momo_banner.png"
               className="w-11/12 m-auto rounded-xl p-1 mb-1"
@@ -85,14 +86,6 @@ export default function Home() {
           </div>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 m-auto w-11/12">
-          <div className="hidden sm:flex">
-            <PhotoCard
-              text={"LINEスタンプ"}
-              color={"border-green-400 text-green-500"}
-              url={"/line"}
-              img={"momo_banner.png"}
-            />
-          </div>
           <PhotoCard
             text={"プロフィール"}
             color={"border-pink-400 text-pink-500"}
@@ -105,6 +98,14 @@ export default function Home() {
             url={"/photos"}
             img={"photos/nino.png"}
           />
+          <div className="hidden sm:flex">
+            <PhotoCard
+              text={"LINEスタンプ"}
+              color={"border-green-400 text-green-500"}
+              url={"/line"}
+              img={"momo_banner.png"}
+            />
+          </div>
         </div>
         <ShareButton url={url} text={description} />
       </main>

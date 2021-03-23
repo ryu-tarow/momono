@@ -13,8 +13,8 @@ export default function Standard() {
   const url02 = "photos/standard";
   const image = "photos/china_02.png";
   const title = "ましものほむぺでございましも";
-  const pageTitle = "ましものほむぺでございましも";
-  const description = "ましもの写真集｜スタンダード";
+  const pageTitle = "ましものほむぺでございましも｜フォトアルバム";
+  const description = "カテゴリー：スタンダード";
 
   return (
     <>

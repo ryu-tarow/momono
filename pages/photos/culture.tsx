@@ -13,8 +13,8 @@ export default function Culture() {
   const url02 = "photos/culture";
   const image = "photos/kimono_05.png";
   const title = "ましものほむぺでございましも";
-  const pageTitle = "ましものほむぺでございましも";
-  const description = "ましもの写真集｜カルチャー";
+  const pageTitle = "ましものほむぺでございましも｜フォトアルバム";
+  const description = "カテゴリー：カルチャー";
 
   return (
     <>
