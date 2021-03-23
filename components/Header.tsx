@@ -37,12 +37,12 @@ export default function Header() {
           <ul className="flex">
             <Link href="/profile">
               <li className="mx-5 mt-2 hover:text-pink-200 cursor-pointer duration-300 hover:opacity-80">
-                プロフィール
+                <b>プロフィール</b>
               </li>
             </Link>
             <Link href="/photos">
               <li className="mx-5 mt-2 hover:text-pink-200 cursor-pointer duration-300 hover:opacity-80">
-                フォトアルバム
+                <b>フォトアルバム</b>
               </li>
             </Link>
             {/* <Link href="/contact">
@@ -63,14 +63,14 @@ export default function Header() {
                 onClick={onClickShowNav}
                 className="px-5 py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
               >
-                プロフィール
+                <b>プロフィール</b>
               </li>
             </Link>
             <li
               onClick={onClickShowPhotoCategory}
               className="px-5 py-2 border-t border-pink-200 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
             >
-              フォトアルバム
+              <b>フォトアルバム</b>
             </li>
             {showPhotoCategory && (
               <ul className="text-sm">
@@ -114,7 +114,7 @@ export default function Header() {
                 onClick={onClickShowNav}
                 className="border-t border-pink-200 px-5 py-2 hover:bg-pink-400 duration-300 hover:opacity-80 cursor-pointer"
               >
-                LINEスタンプ
+                <b>LINEスタンプ</b>
               </li>
             </Link>
             {/* <Link href="/contact">
