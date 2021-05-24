@@ -82,7 +82,7 @@ export default function Home() {
           <div className="bg-red-400 m-auto text-center text-white mx-4 rounded-full py-2 rounded-b-none">
             <b>真白桃乃ちゃんねる。</b>
           </div>
-          <iframe className="w-screen h-auto px-4" src="https://www.youtube.com/embed/o5cNpPBetPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe className="w-screen h-auto px-4" src="https://www.youtube.com/embed/o5cNpPBetPA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
           <div className="bg-red-400 m-auto text-center text-white mx-4 rounded-full py-2 rounded-t-none">
           </div>
           </div>
