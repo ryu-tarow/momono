@@ -78,20 +78,24 @@ export default function Home() {
           />
         </ul>
         <div className="sm:hidden">
-          <div className="bg-pink-300 m-auto text-center text-white mx-4 rounded-2xl py-2 rounded-b-none">
+          <div className="bg-pink-300 m-auto text-center text-white mx-4 rounded-2xl py-2 mt-3 rounded-b-none">
             <div className="pb-1.5">
               <b>真白桃乃ちゃんねる。</b>
             </div>
-            <a href="https://www.youtube.com/watch?v=o5cNpPBetPA">
+            <a href="https://m.youtube.com/channel/UC_hysc5fXxPHdLuN_hGV0mg">
               <div className="bg-red-500 text-sm py-1 w-11/12 m-auto rounded-md hover:bg-red-400 duration-300 hover:opacity-70">
                 <b>▶︎ チャンネル登録よろぴんこ</b>
               </div>
             </a>
           </div>
-          <iframe className="w-screen h-auto px-4" src="https://www.youtube.com/embed/o5cNpPBetPA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-          <div className="bg-pink-300 m-auto text-center text-white mx-4 rounded-2xl py-2 rounded-t-none">
-          </div>
-          </div>
+          <iframe
+            className="w-screen h-auto px-4"
+            src="https://www.youtube.com/embed/o5cNpPBetPA"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
+          <div className="bg-pink-300 mb-3 m-auto text-center text-white mx-4 rounded-2xl py-2 rounded-t-none"></div>
+        </div>
         <div className="sm:hidden">
           <div className="relative">
             <Link href="/line">

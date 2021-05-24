@@ -5,7 +5,6 @@ export default function Diary() {
   const { user } = useAuthentication();
   return (
     <>
-      
       <TitleH1 text={"日記"} />
       <div className="m-auto w-11/12 max-w-screen-lg">
         <div className="p-2 border border-pink-300 m-1 my-2 rounded-md">

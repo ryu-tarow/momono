@@ -26,9 +26,9 @@ export function useAuthentication() {
         const loginUser: User = {
           uid: firebaseUser.uid,
           isAnonymous: firebaseUser.isAnonymous,
-        }
-          setUser(loginUser)
-          createUserIfNotFound(loginUser)
+        };
+        setUser(loginUser);
+        createUserIfNotFound(loginUser);
       } else {
         setUser(null);
       }
@@ -39,12 +39,12 @@ export function useAuthentication() {
 }
 
 async function createUserIfNotFound(user: User) {
-    const useRef = firebase.firestore().collection("users").doc(user.uid)
-    const doc = await useRef.get()
-    if (doc.exists) {
-        return
-    }
-    await useRef.set({
-        name: "taro" + new Date().getTime(),
-    })
+  const useRef = firebase.firestore().collection("users").doc(user.uid);
+  const doc = await useRef.get();
+  if (doc.exists) {
+    return;
+  }
+  await useRef.set({
+    name: "taro" + new Date().getTime(),
+  });
 }
