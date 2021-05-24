@@ -37,9 +37,9 @@ export default function Home() {
       </Head>
       <main className="m-auto max-w-screen-lg">
         <div className="absolute w-1/2 md:w-1/3">
-          <h3 className="text-center text-sm mt-3 ml-5 mr-1 p-1.5 text-white bg-gray-700 opacity-80 rounded-2xl rounded-b-none sm:mt-9">
+          <div className="text-center text-sm mt-3 ml-5 mr-1 p-1.5 text-white bg-gray-700 opacity-80 rounded-2xl rounded-b-none sm:mt-9">
             <b>スケジュール</b>
-          </h3>
+          </div>
           <div className="ml-4">
             <a href="https://note.com/msrmmn">
               <div className="">
@@ -67,11 +67,26 @@ export default function Home() {
             color={"bg-pink-400 mx-0"}
           />
           <SNSLink
+            img={"snsIcons/youtube.png"}
+            link={"https://www.youtube.com/channel/UC_hysc5fXxPHdLuN_hGV0mg"}
+            color={"bg-white mx-1 bg-red-500"}
+          />
+          <SNSLink
             img={"snsIcons/tiktok.png"}
             link={"https://www.tiktok.com/@msrmmn?lang=ja"}
-            color={"bg-gray-800 mx-1"}
+            color={"bg-gray-800 mr-1"}
           />
         </ul>
+        <a href="https://www.youtube.com/watch?v=o5cNpPBetPA">
+        <div className="sm:hidden">
+          <div className="bg-red-400 m-auto text-center text-white mx-4 rounded-full py-2 rounded-b-none">
+            <b>真白桃乃ちゃんねる。</b>
+          </div>
+          <iframe className="w-screen h-auto px-4" src="https://www.youtube.com/embed/o5cNpPBetPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div className="bg-red-400 m-auto text-center text-white mx-4 rounded-full py-2 rounded-t-none">
+          </div>
+          </div>
+        </a>
         <div className="sm:hidden">
           <div className="relative">
             <Link href="/line">

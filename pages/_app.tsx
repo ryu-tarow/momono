@@ -6,6 +6,7 @@ import "lib/firebase";
 import { useEffect } from "react";
 import * as gtag from "lib/gtag";
 import { useRouter } from "next/router";
+import { RecoilRoot } from "recoil";
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   const router = useRouter();
@@ -25,9 +26,11 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 
   return (
     <>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <RecoilRoot>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </RecoilRoot>
     </>
   );
 }

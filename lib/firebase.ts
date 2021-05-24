@@ -1,7 +1,9 @@
 import firebase from "firebase/app";
 import "firebase/analytics";
+import "firebase/auth";
+import "firebase/firestore";
 
-if (typeof window !== "undefined" && firebase.app.length === 0) {
+if (typeof window !== "undefined" && firebase.apps.length === 0) {
   const firebaseConfig = {
     apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
     authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
