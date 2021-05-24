@@ -77,16 +77,21 @@ export default function Home() {
             color={"bg-gray-800 mr-1"}
           />
         </ul>
-        <a href="https://www.youtube.com/watch?v=o5cNpPBetPA">
         <div className="sm:hidden">
-          <div className="bg-red-400 m-auto text-center text-white mx-4 rounded-full py-2 rounded-b-none">
-            <b>真白桃乃ちゃんねる。</b>
+          <div className="bg-pink-300 m-auto text-center text-white mx-4 rounded-2xl py-2 rounded-b-none">
+            <div className="pb-1.5">
+              <b>真白桃乃ちゃんねる。</b>
+            </div>
+            <a href="https://www.youtube.com/watch?v=o5cNpPBetPA">
+              <div className="bg-red-500 text-sm py-1 w-11/12 m-auto rounded-md hover:bg-red-400 duration-300 hover:opacity-70">
+                <b>▶︎ チャンネル登録よろぴんこ</b>
+              </div>
+            </a>
           </div>
           <iframe className="w-screen h-auto px-4" src="https://www.youtube.com/embed/o5cNpPBetPA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-          <div className="bg-red-400 m-auto text-center text-white mx-4 rounded-full py-2 rounded-t-none">
+          <div className="bg-pink-300 m-auto text-center text-white mx-4 rounded-2xl py-2 rounded-t-none">
           </div>
           </div>
-        </a>
         <div className="sm:hidden">
           <div className="relative">
             <Link href="/line">
