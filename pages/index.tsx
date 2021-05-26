@@ -80,7 +80,7 @@ export default function Home() {
         <div className="sm:hidden">
           <div className="bg-pink-300 m-auto text-center text-white mx-4 rounded-2xl py-2 mt-3 rounded-b-none">
             <div className="pb-1.5">
-              <b>真白桃乃ちゃんねる。</b>
+              <b>ましもちゃんねる。</b>
             </div>
             <a href="https://m.youtube.com/channel/UC_hysc5fXxPHdLuN_hGV0mg">
               <div className="bg-red-500 text-sm py-1 w-11/12 m-auto rounded-md hover:bg-red-400 duration-300 hover:opacity-70">
