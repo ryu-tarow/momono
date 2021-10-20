@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
   //TOPページの基本データ
   const url = "https://msrmmn.ml";
-  const image = "top.png";
+  const image = "top_v2.png";
   const title = "ましものほむぺでございましも";
   const pageTitle = "ましものほむぺでございましも";
   const description = "真白桃乃のオフィシャルサイト";
@@ -36,24 +36,8 @@ export default function Home() {
         <meta property="twitter:image" content={`${url}/${image}`} />
       </Head>
       <main className="m-auto max-w-screen-lg">
-        <div className="absolute w-1/2 md:w-1/3">
-          <div className="text-center text-sm mt-3 ml-5 mr-1 p-1.5 text-white bg-gray-700 opacity-80 rounded-2xl rounded-b-none sm:mt-9">
-            <b>スケジュール</b>
-          </div>
-          <div className="ml-4">
-            <a href="https://note.com/msrmmn">
-              <div className="">
-                <img
-                  src="snsIcons/note.png"
-                  alt="schedule"
-                  className="rounded-t-none rounded-2xl duration-300 hover:opacity-70 px-1 mb-2"
-                />
-              </div>
-            </a>
-          </div>
-        </div>
         <div className="">
-          <img src="top.png" className="bg-gray-100 w-screen" alt="top-image" />
+          <img src="top_v2.png" className="bg-gray-100 w-screen" alt="top-image" />
         </div>
         <ul className="flex justify-center w-11/12 m-auto">
           <SNSLink
@@ -78,7 +62,7 @@ export default function Home() {
           />
         </ul>
         <div className="sm:hidden">
-          <div className="bg-pink-300 m-auto text-center text-white mx-4 rounded-2xl py-2 mt-3 rounded-b-none">
+          <div className="bg-pink-300 m-auto text-center text-white mx-6 rounded-2xl py-2 mt-3 rounded-b-none">
             <div className="pb-1.5">
               <b>ましもちゃんねる。</b>
             </div>
@@ -89,12 +73,12 @@ export default function Home() {
             </a>
           </div>
           <iframe
-            className="w-screen h-auto px-4"
+            className="w-screen h-40 px-6"
             src="https://www.youtube.com/embed/o5cNpPBetPA"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           ></iframe>
-          <div className="bg-pink-300 mb-3 m-auto text-center text-white mx-4 rounded-2xl py-2 rounded-t-none"></div>
+          <div className="bg-pink-300 mb-3 m-auto text-center text-white mx-6 rounded-2xl py-2 rounded-t-none"></div>
         </div>
         <div className="sm:hidden">
           <div className="relative">
